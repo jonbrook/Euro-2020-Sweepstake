@@ -29,11 +29,49 @@ Build a portal to manage sweepstakes for the Euro 2020 tournament, utimately to 
 
 ## Setup
 
-Sign up for an account on https://www.api-football.com/ and create a dotenv file using the example.\
-Backend: `npm install && docker-compose up -d && npm run dev`\
-Frontend: `cd frontend && yarn && yarn start`
+1. Clone the repo
 
-Live version to be provided in the future...
+```
+git clone https://github.com/jonbrook/Euro-2020-Sweepstake.git
+cd Euro-2020-Sweepstake
+```
+
+2. Configure environment variables
+
+```
+Sign up for an account on https://www.api-football.com/ and create .env files using the examples in both the frontend and backend.
+```
+
+3. Install all dependencies
+
+```
+cd backend && npm install
+cd frontend && yarn
+```
+
+4. Run postgres and redis services
+
+```
+docker-compose up -d
+```
+
+5. Start the backend
+
+```
+cd backend && npn run dev
+```
+
+6. Start the fronend
+
+```
+cd frontend && yarn start
+```
+
+7. Create a new user
+
+```
+Use postman collection to send request to POST /user
+```
 
 ## Features
 
