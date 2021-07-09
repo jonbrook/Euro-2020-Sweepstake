@@ -78,7 +78,7 @@ Use postman collection to send request to POST /user
 List of features ready:
 
 - Basic login (email address only, no auth)
-- Create new or join existing sweepstake pools using unique
+- Create new or join existing sweepstake pools using unique codes
 - Make predictions per pool on the group stages of the tournament
 - Predictions cannot be updated once each match kickoff has passed
 - Leaderboard to keep track of current pool standings
