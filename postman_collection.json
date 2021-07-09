@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "c43c45ca-7fd1-46ba-b56d-091c9ac5794b",
+		"name": "Euro 2021 Sweepstake",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "match",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/match",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"match"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Another User\",\r\n    \"email\": \"test@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pool/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pool/ggcEmNkGo-/user/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pool",
+						"ggcEmNkGo-",
+						"user",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prediction/:nanoId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"predictions\": [\r\n        {   \r\n            \"id\": 114,\r\n            \"matchId\": 657674,\r\n            \"homeScore\": 5,\r\n            \"awayScore\": 5\r\n        },\r\n        {   \r\n            \"id\": 115,\r\n            \"matchId\": 657675,\r\n            \"homeScore\": 5,\r\n            \"awayScore\": 5\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/prediction/es1qa3SGNB/user/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"prediction",
+						"es1qa3SGNB",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prediction/:nanoId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"predictions\": [\r\n        {\r\n            \"matchId\": 657674,\r\n            \"homeScore\": 2,\r\n            \"awayScore\": 3\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/prediction/es1qa3SGNB/user/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"prediction",
+						"es1qa3SGNB",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prediction/:nanoId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/prediction/es1qa3SGNB/user/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"prediction",
+						"es1qa3SGNB",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pool",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pool/user/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pool",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pool",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pool/user/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pool",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/result",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/login/test@example.com",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login",
+						"test@example.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leaderboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/leaderboard/ggcEmNkGo-",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"leaderboard",
+						"ggcEmNkGo-"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
